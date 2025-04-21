@@ -1,392 +1,88 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ripasso di Matematica</title>
+    <title>História da Segunda Guerra Mundial</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="sidebar">
-        <h1>Ripasso di Matematica</h1>
+        <h1>História da Segunda Guerra Mundial</h1>
         <ul>
-            <li><a href="#funzioni">Funzioni</a>
+            <li><a href="#causas">Causas da Guerra</a></li>
+            <li><a href="#principais-eventos">Principais Eventos</a>
                 <ul>
-                    <li><a href="#funzioni-base">Concetti Base</a></li>
-                    <li><a href="#funzioni-proprieta">Proprietà</a></li>
-                    <li><a href="#funzioni-inverse">Funzioni Inverse</a></li>
-                    <li><a href="#funzioni-pari-dispari">Funzioni Pari e Dispari</a></li>
+                    <li><a href="#invasao-da-polonia">Invasão da Polônia</a></li>
+                    <li><a href="#batalha-da-inglaterra">Batalha da Inglaterra</a></li>
+                    <li><a href="#ataque-a-pearl-harbor">Ataque a Pearl Harbor</a></li>
+                    <li><a href="#dia-d">Dia D</a></li>
                 </ul>
             </li>
-            <li><a href="#equazioni">Equazioni</a>
-                <ul>
-                    <li><a href="#equazioni-irrazionali">Equazioni Irrazionali</a></li>
-                    <li><a href="#equazioni-modulo">Equazioni con Modulo</a></li>
-                </ul>
-            </li>
-            <li><a href="#disequazioni">Disequazioni</a>
-                <ul>
-                    <li><a href="#disequazioni-irrazionali">Disequazioni Irrazionali</a></li>
-                    <li><a href="#disequazioni-modulo">Disequazioni con Modulo</a></li>
-                </ul>
-            </li>
-            <li><a href="#retta">La Retta</a>
-                <ul>
-                    <li><a href="#equazione-retta">Equazione della Retta</a></li>
-                    <li><a href="#parallelismo">Parallelismo</a></li>
-                    <li><a href="#perpendicolarita">Perpendicolarità</a></li>
-                    <li><a href="#posizioni-reciproche">Posizioni Reciproche</a></li>
-                    <li><a href="#distanza-punto-retta">Distanza Punto-Retta</a></li>
-                </ul>
-            </li>
+            <li><a href="#consequencias">Consequências da Guerra</a></li>
+            <li><a href="#impacto-social">Impacto Social</a></li>
         </ul>
     </nav>
 
     <main class="content">
-        <section id="funzioni">
-            <h2>Funzioni</h2>
+        <section id="causas">
+            <h2>Causas da Guerra</h2>
+            <p>A Segunda Guerra Mundial (1939-1945) foi causada por uma combinação de fatores, incluindo:</p>
+            <ul>
+                <li>Tratado de Versalhes e suas consequências econômicas e sociais para a Alemanha.</li>
+                <li>Ascensão de regimes totalitários, como o nazismo na Alemanha e o fascismo na Itália.</li>
+                <li>Expansão territorial e militarista de países como Japão e Alemanha.</li>
+                <li>Falência da Liga das Nações em manter a paz.</li>
+            </ul>
+        </section>
+
+        <section id="principais-eventos">
+            <h2>Principais Eventos</h2>
             
-            <div id="funzioni-base">
-                <h3>Concetti Base</h3>
-                <p>Una funzione è una relazione tra due insiemi (A → B) che ad ogni elemento di A associa uno solo elemento di B.</p>
-                <div class="formula">
-                    <p>Terminologia:</p>
-                    <ul>
-                        <li>x = Variabile indipendente</li>
-                        <li>y = f(x) = Variabile dipendente</li>
-                        <li>Dominio di f = Insieme (es: A)</li>
-                        <li>Codominio di f = Insieme (es: B)</li>
-                        <li>y = Immagine di x</li>
-                        <li>x = Controimmagine di y</li>
-                    </ul>
-                    <div class="examples">
-                        <p>Esempio: Y = x²</p>
-                        <ul>
-                            <li>f: ℝ → ℝ</li>
-                            <li>Dominio di f = Insieme di tutte le x</li>
-                            <li>Codominio di f = Insieme di tutte le y</li>
-                            <li>Immagine di f = Insieme di tutti i valori f(x)</li>
-                        </ul>
-                    </div>
-                </div>
+            <div id="invasao-da-polonia">
+                <h3>Invasão da Polônia</h3>
+                <p>A guerra começou em 1º de setembro de 1939, quando a Alemanha invadiu a Polônia, levando à declaração de guerra por parte da Grã-Bretanha e da França.</p>
             </div>
 
-            <div id="funzioni-proprieta">
-                <h3>Proprietà delle Funzioni</h3>
-                <div class="formula">
-                    <h4>1. Funzioni Iniettive</h4>
-                    <p>Una funzione è iniettiva quando ad ogni elemento di B corrisponde al più un elemento di A.</p>
-                    <div class="examples">
-                        <p>Esempio: f: ℝ → ℝ</p>
-                        <ul>
-                            <li>f(x) = 3x è iniettiva</li>
-                            <li>f(x) = x² non è iniettiva</li>
-                        </ul>
-                    </div>
-
-                    <h4>2. Funzioni Suriettive</h4>
-                    <p>Una funzione è suriettiva quando ogni elemento di B è immagine di almeno un elemento di A.</p>
-                    <div class="examples">
-                        <p>Esempio: f: ℝ → ℝ</p>
-                        <ul>
-                            <li>f(x) = 3x è suriettiva</li>
-                            <li>f(x) = x² è suriettiva solo se consideriamo B = [0,+∞)</li>
-                        </ul>
-                    </div>
-
-                    <h4>3. Funzioni Biunivoche (o Biettive)</h4>
-                    <p>Una funzione è biunivoca quando è sia iniettiva che suriettiva.</p>
-                    <div class="examples">
-                        <p>Esempio: f: ℝ → ℝ</p>
-                        <ul>
-                            <li>f(x) = 3x è biunivoca</li>
-                            <li>f(x) = x² non è biunivoca</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="interactive-demo" id="function-properties-demo">
-                    <!-- Interactive demo will be added via JavaScript -->
-                </div>
+            <div id="batalha-da-inglaterra">
+                <h3>Batalha da Inglaterra</h3>
+                <p>Entre julho e outubro de 1940, a Luftwaffe (força aérea alemã) tentou dominar os céus britânicos, mas a resistência britânica foi decisiva.</p>
             </div>
 
-            <div id="funzioni-inverse">
-                <h3>Funzioni Inverse</h3>
-                <p>Le funzioni iniettive sono invertibili e la funzione inversa si indica con f⁻¹.</p>
-                <div class="formula">
-                    <p>Per trovare la funzione inversa:</p>
-                    <ol>
-                        <li>Sostituire f(x) con y</li>
-                        <li>Scambiare x e y</li>
-                        <li>Risolvere rispetto a y</li>
-                    </ol>
-                    <div class="examples">
-                        <p>Esempio: f(x) = 3x</p>
-                        <ul>
-                            <li>y = 3x</li>
-                            <li>x = 3y</li>
-                            <li>y = x/3</li>
-                            <li>Quindi: f⁻¹(x) = x/3</li>
-                        </ul>
-                    </div>
-                </div>
+            <div id="ataque-a-pearl-harbor">
+                <h3>Ataque a Pearl Harbor</h3>
+                <p>Em 7 de dezembro de 1941, o Japão atacou a base naval dos EUA em Pearl Harbor, levando os Estados Unidos a entrarem na guerra.</p>
             </div>
 
-            <div id="funzioni-pari-dispari">
-                <h3>Funzioni Pari e Dispari</h3>
-                <div class="formula">
-                    <p>Una funzione si dice pari quando:</p>
-                    <div class="math-block">f(-x) = f(x)</div>
-                    <p>Una funzione si dice dispari quando:</p>
-                    <div class="math-block">f(-x) = -f(x)</div>
-                    <div class="examples">
-                        <p>Esempi:</p>
-                        <ul>
-                            <li>f(x) = x⁴ - 2x² + 3 è pari</li>
-                            <li>f(x) = |x| è pari</li>
-                            <li>f(x) = x³ - 5x è dispari</li>
-                        </ul>
-                        <p>Graficamente:</p>
-                        <ul>
-                            <li>Funzione pari: simmetrica rispetto all'asse y</li>
-                            <li>Funzione dispari: simmetrica rispetto all'origine</li>
-                        </ul>
-                    </div>
-                </div>
+            <div id="dia-d">
+                <h3>Dia D</h3>
+                <p>Em 6 de junho de 1944, as forças aliadas desembarcaram na Normandia, na França, em uma das maiores operações de invasão da história, marcando o início do fim da ocupação nazista na Europa.</p>
             </div>
         </section>
 
-        <section id="equazioni">
-            <h2>Equazioni</h2>
-            
-            <div id="equazioni-irrazionali">
-                <h3>Equazioni Irrazionali</h3>
-                <div class="formula">
-                    <p>Per risolvere equazioni con radicali:</p>
-                    <ol>
-                        <li>Verifica che il radicando sia ≥ 0</li>
-                        <li>Eleva entrambi i membri all'esponente appropriato</li>
-                        <li>Risolvi l'equazione risultante</li>
-                        <li>Verifica le soluzioni nel dominio originale</li>
-                    </ol>
-                    <div class="examples">
-                        <p>Esempio:</p>
-                        <div class="math-block">
-                            √(2x² - 3x + 4) = x
-                        </div>
-                        <p>Condizioni:</p>
-                        <ul>
-                            <li>2x² - 3x + 4 ≥ 0 (sempre verificata)</li>
-                            <li>Elevando al quadrato: 2x² - 3x + 4 = x²</li>
-                            <li>x² - 3x + 4 = 0</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="equazioni-modulo">
-                <h3>Equazioni con Modulo</h3>
-                <div class="formula">
-                    <p>Per equazioni del tipo |f(x)| = k:</p>
-                    <ul>
-                        <li>Se k < 0: nessuna soluzione</li>
-                        <li>Se k = 0: f(x) = 0</li>
-                        <li>Se k > 0: f(x) = k oppure f(x) = -k</li>
-                    </ul>
-                    <div class="examples">
-                        <p>Esempio 1: |3 - 5x| = 4</p>
-                        <ul>
-                            <li>3 - 5x = 4 oppure 3 - 5x = -4</li>
-                            <li>-5x = 1 oppure -5x = -7</li>
-                            <li>x = -1/5 oppure x = 7/5</li>
-                        </ul>
-                        <p>Esempio 2: |x² - 4x + 3| = 2</p>
-                        <ul>
-                            <li>x² - 4x + 3 = 2 oppure x² - 4x + 3 = -2</li>
-                            <li>x² - 4x + 1 = 0 oppure x² - 4x + 5 = 0</li>
-                            <li>Risolvere le equazioni di secondo grado</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <section id="consequencias">
+            <h2>Consequências da Guerra</h2>
+            <p>A Segunda Guerra Mundial teve profundas consequências, incluindo:</p>
+            <ul>
+                <li>Destruição em larga escala na Europa e na Ásia.</li>
+                <li>Criação da Organização das Nações Unidas (ONU) para promover a paz.</li>
+                <li>Divisão da Europa em blocos ocidental e oriental durante a Guerra Fria.</li>
+                <li>Descolonização de várias nações na África e na Ásia.</li>
+            </ul>
         </section>
 
-        <section id="disequazioni">
-            <h2>Disequazioni</h2>
-            
-            <div id="disequazioni-irrazionali">
-                <h3>Disequazioni Irrazionali</h3>
-                <div class="formula">
-                    <p>Per risolvere disequazioni con radicali:</p>
-                    <ol>
-                        <li>Verifica il dominio (radicando ≥ 0)</li>
-                        <li>Se l'indice è pari, considera che il radicale è sempre ≥ 0</li>
-                        <li>Risolvi considerando il segno del radicando</li>
-                    </ol>
-                    <div class="examples">
-                        <p>Esempio:</p>
-                        <div class="math-block">
-                            √(x² + 5x + 6) > 2
-                        </div>
-                        <p>Si risolve:</p>
-                        <ul>
-                            <li>x² + 5x + 6 ≥ 0 (dominio)</li>
-                            <li>(x² + 5x + 6) > 4 (elevando al quadrato)</li>
-                            <li>x² + 5x + 2 > 0</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="disequazioni-modulo">
-                <h3>Disequazioni con Modulo</h3>
-                <div class="formula">
-                    <h4>Caso particolare: |f(x)| < k o |f(x)| > k</h4>
-                    <ul>
-                        <li>Se k < 0: impossibile per |f(x)| < k</li>
-                        <li>Se k = 0: f(x) = 0</li>
-                        <li>Se k > 0: -k < f(x) < k per |f(x)| < k</li>
-                    </ul>
-                    <div class="examples">
-                        <p>Esempio 1: |x² + 5x + 6| < 2</p>
-                        <ul>
-                            <li>-2 < x² + 5x + 6 < 2</li>
-                            <li>x² + 5x + 4 < 0</li>
-                        </ul>
-                        <p>Esempio 2: |x² + 5x + 8| > 0</p>
-                        <ul>
-                            <li>x² + 5x + 8 > 0 oppure x² + 5x + 8 < 0</li>
-                            <li>Risolvere il sistema di disequazioni</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="formula">
-                    <h4>In Generale: |f(x)| ≷ g(x)</h4>
-                    <p>Si possono presentare due casi:</p>
-                    <ul>
-                        <li>Se g(x) ≥ 0: f(x) > g(x) o f(x) < -g(x)</li>
-                        <li>Se g(x) < 0: sempre vera</li>
-                    </ul>
-                    <div class="examples">
-                        <p>Esempio: |2-x| > 4+3x</p>
-                        <ul>
-                            <li>Studiare il segno di 4+3x</li>
-                            <li>2-x > 4+3x oppure 2-x < -(4+3x)</li>
-                            <li>Risolvere il sistema risultante</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="retta">
-            <h2>La Retta</h2>
-            
-            <div id="equazione-retta">
-                <h3>Equazione della Retta</h3>
-                <div class="formula">
-                    <h4>Forme dell'equazione:</h4>
-                    <ul>
-                        <li>Forma esplicita: y = mx + q
-                            <ul>
-                                <li>m = coefficiente angolare (pendenza)</li>
-                                <li>q = termine noto (intercetta y)</li>
-                            </ul>
-                        </li>
-                        <li>Forma implicita: ax + by + c = 0</li>
-                    </ul>
-                    <div class="examples">
-                        <h4>Casi Particolari:</h4>
-                        <ol>
-                            <li>Rette parallele all'asse x:
-                                <ul>
-                                    <li>y = k → funzione costante</li>
-                                    <li>Caso particolare: y = 0 → asse x</li>
-                                </ul>
-                            </li>
-                            <li>Rette parallele all'asse y:
-                                <ul>
-                                    <li>x = k → non è una funzione</li>
-                                    <li>Caso particolare: x = 0 → asse y</li>
-                                </ul>
-                            </li>
-                            <li>Rette passanti per l'origine:
-                                <ul>
-                                    <li>y = mx → termine noto = 0</li>
-                                    <li>Il coefficiente m dipende dall'inclinazione della retta</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div id="parallelismo">
-                <h3>Parallelismo</h3>
-                <div class="formula">
-                    <p>Due rette sono parallele se e solo se hanno lo stesso coefficiente angolare:</p>
-                    <div class="math-block">
-                        r₁: y = mx + q<br>
-                        r₂: y = m'x + q'<br>
-                        Parallele ⟺ m = m'
-                    </div>
-                    <div class="examples">
-                        <p>Condizione di parallelismo:</p>
-                        <ul>
-                            <li>m = m' (coefficienti angolari uguali)</li>
-                            <li>q ≠ q' (termini noti diversi)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="perpendicolarita">
-                <h3>Perpendicolarità</h3>
-                <div class="formula">
-                    <p>Due rette sono perpendicolari se e solo se i loro coefficienti angolari sono uno l'opposto del reciproco dell'altro:</p>
-                    <div class="math-block">
-                        m₁ · m₂ = -1
-                    </div>
-                    <div class="examples">
-                        <p>Per rette perpendicolari:</p>
-                        <ul>
-                            <li>m' = -1/m</li>
-                            <li>Condizione di perpendicolarità: m · m' = -1</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="posizioni-reciproche">
-                <h3>Posizioni Reciproche di Due Rette</h3>
-                <div class="formula">
-                    <ul>
-                        <li>Parallele: m = m' e q ≠ q'</li>
-                        <li>Coincidenti: m = m' e q = q'</li>
-                        <li>Incidenti (1 punto di intersezione): m ≠ m'</li>
-                        <li>Perpendicolari (caso particolare di incidenti): m · m' = -1</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="distanza-punto-retta">
-                <h3>Distanza Punto-Retta</h3>
-                <div class="formula">
-                    <p>Per una retta in forma implicita ax + by + c = 0 e un punto P(x₀, y₀), la distanza d è:</p>
-                    <div class="math-block">
-                        d = |ax₀ + by₀ + c| / √(a² + b²)
-                    </div>
-                    <div class="examples">
-                        <p>Per una retta in forma esplicita y = mx + q:</p>
-                        <div class="math-block">
-                            d = |mx₀ - y₀ + q| / √(1 + m²)
-                        </div>
-                        <p>Nota: La distanza è sempre positiva o nulla.</p>
-                    </div>
-                </div>
-            </div>
+        <section id="impacto-social">
+            <h2>Impacto Social</h2>
+            <p>A guerra teve um impacto significativo na sociedade, incluindo:</p>
+            <ul>
+                <li>Alterações nos papéis de gênero, com muitas mulheres entrando no mercado de trabalho.</li>
+                <li>Movimentos de direitos civis ganhando força, especialmente nos EUA.</li>
+                <li>Traumas psicológicos e sociais em larga escala devido à guerra e suas consequências.</li>
+                <li>Deslocamento de populações e refugiados em várias partes do mundo.</li>
+            </ul>
         </section>
     </main>
 
     <script src="js/script.js"></script>
 </body>
-</html> 
+</html>
