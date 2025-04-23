@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>História da Segunda Guerra Mundial</title>
+    <title>Arthur Artificial Intelligence WebPage</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .ai-interface {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #e9ecef;
+        }
+        .ai-interface h2 {
+            margin-top: 0;
+        }
+        .question-box {
+            margin-top: 10px;
+        }
+        .question-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <nav class="sidebar">
@@ -25,6 +63,14 @@
     </nav>
 
     <main class="content">
+        <h1>Arthur Artificial Intelligence WebPage</h1>
+        
+        <div class="ai-interface">
+            <h2>Faça sua pergunta para a AI</h2>
+            <textarea class="question-input" rows="4" placeholder="Digite sua pergunta aqui..."></textarea>
+            <button class="submit-button">Enviar</button>
+        </div>
+
         <section id="causas">
             <h2>Causas da Guerra</h2>
             <p>A Segunda Guerra Mundial (1939-1945) foi causada por uma combinação de fatores, incluindo:</p>
@@ -85,4 +131,3 @@
 
     <script src="js/script.js"></script>
 </body>
-</html>
